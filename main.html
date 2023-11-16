@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Task UI Main Page</title>
+    <link rel="shortcut icon" href="./imgs/george-holand.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="logo" src="./imgs/logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Solutions</a>
+                            <ul class="dropdown-menu" id="old_dropdown">
+                                <li><a class="dropdown-item drop_style" href="#">
+                                    <i class="fa-solid fa-copy"></i>
+                                    <div class="">
+                                        <h4>Assignment</h4>
+                                        <p>Achieve excellence through personalized expertly guided <br>assignment assistance.</p>
+                                    </div>
+                                </a></li>
+                                <li><a class="dropdown-item drop_style drop_active" href="./index.html" id="next_dropdown">
+                                    <i class="fa-solid fa-copy active_content"></i>
+                                    <div class="">
+                                        <h4 class="">Resume and Cover Letter</h4>
+                                        <p>Elevate your career prospects with tailored and compelling <br> resumes designed to impress employers</p>
+                                    </div>
+                                </a></li>
+
+                                <p class="seeAll">See all</p>
+                            </ul>
+    
+    
+    
+    
+
+                        </li>
+    
+    
+    
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Resources</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Why us</a>
+                        </li>
+    
+    
+    
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex right_div">
+                        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <button class="btn btn-primary">Try Now</button>
+                        <button class="btn text-dark">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    
+    
+    
+    
+    
+    
+        <!-- Main Page Start -->
+    
+        <!-- Header Start -->
+        <div class="container">
+            <div class="main_div">
+                <h1>We got all the tools you <br> want & need</h1>
+                    <p>Addonstudy resume writer gives you a fine level of control over crafting your resume optimized to pass <br> through Applicant Tracking Systems, increasing the chances of getting shortlisted by your desired <br> employers and recruiters.</p>
+            </div>
+    
+    
+            <div class="second_div">
+                <div class="">
+                    <h4>Build your professional resume <br>10X faster with AI</h4>
+                <button class="btn btn-primary">Generate Resume</button>
+    
+    
+                <div class="scroll_div">
+                    <div class="">
+                        <p id="para1">Application tracking system focused <br> phrases and keywords</p>
+                        <p id="para2">Showcase your expertise effortlessly with <br> a precisely tailored skills section</p>
+                        <p id="para3">Application tracking system focused <br> phrases and keywords</p>
+                        <p id="para4">Showcase your expertise effortlessly with <br> a precisely tailored skills section</p>
+                        <p id="para5">Application tracking system focused <br> phrases and keywords</p>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="second_img">
+                    <img id="imgChange" src="./imgs/job-decr.png" alt="job-desc">
+                </div>
+
+
+
+            </div>
+    
+    
+    
+            <div class="third_div">
+                <h4 class="text-center fw-bold">How it works?</h4>
+    
+                <div class="thrid_grid">
+                    <div class="thrid_text_data">
+                        <p>We transform your vision into reality through a <br> streamlined process consisting of just three simple steps</p>
+    
+    
+    
+                        <div class="scroll_div_2">
+                            <div class="scroll_div_2_div active" onclick="changeImg('imgs/how-it-work.png')">
+                                <h4>Select template</h4>
+                                <p>Our newest resume template developed with attractive colors, <br>
+                                    clean lines, and high content density.</p>
+                            </div>
+    
+                            <div class="scroll_div_2_div" onclick="changeImg('imgs/job-decr.png')">
+                                <h4>Flexible Formatting Tools</h4>
+                                <p>Take control over format. Use the features to fit your resume to <br>
+                                    one page.</p>
+                            </div>
+    
+    
+                            <div class="scroll_div_2_div" onclick="changeImg('imgs/how-it-work.png')">
+                                <h4>Download</h4>
+                                <p>Supports downloading as a Microsoft Word DOCX, Google Doc, or <br>
+                                    .PDF file, Receive in email, Save to Dropbox or Google Drive</p>
+                            </div>
+    
+                        </div>
+    
+    
+                        <button class="btn btn-primary">Generate Resume</button>
+                    </div>
+                    <div class="thrid_grid_img">
+                        <img src="./imgs/how-it-work.png" id="dynamicImg" alt="how-it-work">
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="fourth_div">
+                <h4 class="text-center fw-bold mb-5">Our Impact in their Words</h4>
+    
+                <div class="autoScroll_div">
+                    <div class="row_cards">
+                        <div class="cards_col col1">
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="cards_col col2">
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+                        <div class="cards_col col3">
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+                        <div class="cards_col col4">
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="card">
+                                <img src="./imgs/linkd.png" alt="">
+                                <p>“I've tried several resume builders before,
+                                    but this one stands out. The templates are
+                                    top-notch, and the customization options
+                                    are fantastic. Highly recommended!”</p>
+    
+                                    <div class="user">
+                                        <img src="/imgs/george-holand.png" alt="">
+                                        <div class="text_about">
+                                            <h4>George Holand</h4>
+                                            <p>Fresher</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <!-- Header End -->
+    
+    
+    
+        <div class="fifth_div">
+            <h4 class="text-center fw-bold mt-3">Ready to generate your resume?</h4>
+    
+            <button class="btn btn-primary">Generate Now</button>
+        </div>
+    
+    
+    
+    
+    
+        <!-- Footer Start -->
+        <div class="container">
+        <div class="footer">
+                <div class="footerLogo">
+                    <img src="./imgs/logo.png" alt="logo">
+                    <p>Copyright © 2023 Addonstudy <br> All rights reserved.</p>
+                </div>
+    
+    
+                <div class="footer_list">
+                    <div class="footer_col">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li>Assignment Help</li>
+                            <li>Resume & Cover Letter</li>
+                            <li>Tutoring</li>
+                            <li>Mentoring</li>
+                            <li>Q&A</li>
+                            <li>Textbook Solutions</li>
+                            <li>Exam Prep</li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer_col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Blogs</li>
+                            <li>Articles</li>
+                            <li>FAQs</li>
+                            <li>Disclaimer</li>
+                        </ul>
+                    </div>
+    
+    
+    
+                    <div class="footer_col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Testimonials</li>
+                            <li>Site Map</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="social">
+                <div class="icons">
+                    <img src="./imgs/twitter.png" alt="twitter">
+                <img src="./imgs/ista.png" alt="instagram">
+                <img src="./imgs/f.png" alt="facebook">
+                <img src="./imgs/linkd.png" alt="linkedin">
+                <img src="./imgs/p.png" alt="printest">
+                </div>
+            </div>
+    
+    
+    
+            <div class="pages">
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Licenses</p>
+                <p>Accessibility Statement</p>
+                <p>Statement of Compliance</p>
+            </div>
+        </div>
+        <!-- Footer End -->
+    
+        <!-- Main Page End -->
+    
+    
+    
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+        <script>
+            // For Navbar Start --------------------------------------------------
+            $(document).ready( function() {
+            });
+            // For Navbar End --------------------------------------------------
+
+
+
+            // For Infinity Scroll Effect Start --------------------------------------------------
+            var copy1 = document.querySelector(".col1").cloneNode(true);
+            document.querySelector(".row_cards").appendChild(copy1);
+            var copy2 = document.querySelector(".col2").cloneNode(true);
+            document.querySelector(".row_cards").appendChild(copy2);
+            var copy3 = document.querySelector(".col3").cloneNode(true);
+            document.querySelector(".row_cards").appendChild(copy3);
+            var copy4 = document.querySelector(".col4").cloneNode(true);
+            document.querySelector(".row_cards").appendChild(copy4);
+            // For Infinity Scroll Effect End --------------------------------------------------
+            
+     
+            // For onclick Image Change & Active tab Start -------------------------------------        
+            $(".scroll_div_2 ").on('click', '.scroll_div_2_div', function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+            
+            function changeImg(fileName) {
+                let img = document.querySelector("#dynamicImg");
+                img.setAttribute("src", fileName);
+            }
+            // For onclick Image Change & Active tab End -------------------------------------        
+
+
+
+            // For Scroll Side Image Change Start -------------------------------------     
+               
+            // For Scroll Side Image Change End -------------------------------------        
+
+
+
+        </script>
+</body>
+
+</html>
